@@ -12,8 +12,7 @@ namespace Nechita_Carina_Lab2.CustomCommands
         {
             InputGestureCollection myInputGestures = new InputGestureCollection();
             myInputGestures.Add(new KeyGesture(Key.S, ModifierKeys.Control));
-            launch_command = new RoutedUICommand("Launch", "Launch",
-            typeof(StopCommand), myInputGestures);
+            launch_command = new RoutedUICommand("Launch", "Launch", typeof(StopCommand), myInputGestures);
         }
         public static RoutedUICommand Launch
         {
